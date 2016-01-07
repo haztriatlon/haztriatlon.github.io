@@ -33,9 +33,9 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!--<style>
-            .pulse { -webkit-animation-name: pulse; animation-name: pulse; transform-origin: 0%; -webkit-transform-origin: 0%; }
-        </style>-->
+        <style>
+
+        </style>
 
     </head>
 
@@ -104,7 +104,6 @@
                             -webkit-transition: fill .5s; 
                             -moz-transition: fill .5s; 
                             -o-transition: fill .5s; 
-                            position:absolute;
                         }
                         .land:hover{
                             fill: #FFF;
@@ -112,7 +111,16 @@
                             -moz-transition: fill .5s; 
                             -o-transition: fill .5s; 
                         }
-                        .bringForward{
+                        .landnohover{
+                            fill: #FFF;
+                        }
+                        .pulse { 
+                            transform-origin: 50% 50%;
+                            -moz-transform-origin:  50% 50%; 
+                            -webkit-transform-origin:  50% 50%; 
+                            -ms-transform-origin:   50% 50%; 
+                            -o-animation-name: pulse;  
+                            -o-transform-origin:  50% 50%;
                         }
                     </style>
 
@@ -185,27 +193,14 @@
 
         <!-- Map animations -->
         <script>
-            /*var mapasvg = document.getElementById("mapaMex");
-             mapasvg.addEventListener("load", function () {
-             var svgDoc = mapasvg.getElementsByTagName("g"); //get the inner DOM of some.svg
-             var children = svgDoc[0].getElementsByTagName("path");
-             alert(children.length);
-             var i;
-             for (i = 0; i < children.length; i++) {
-             children[i].addEventListener("onclick", function () {
-             alert('hello world!');
-             }, false);    //add behaviour
-             }
-             }, false);*/
-
             jQuery(document).ready(function ($) {
                 $('path').on('click',
                         function () {
                             //alert(this.id);
                             var g = $(this).parent();
                             $(this).detach();
-                            $(this).appendTo(g)
-                            $(this).attr("class", "land animated swing")
+                            $(this).appendTo(g);
+                            $(this).attr("class", "landnohover animated pulse")
                                     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                                         $(this).attr("class", "land");
                                     });
