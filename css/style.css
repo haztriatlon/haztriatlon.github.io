@@ -1,5 +1,105 @@
 
 .mapa {
-    background-color: #4066B6;
-	color: #fff;
+    color: #fff;
+}
+
+/* Team's info */
+
+#equipos{
+    -moz-animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    -ms-animation-duration: .5s;
+    -o-animation-duration: .5s;
+}
+
+.thumbnail{
+    background-color: rgba(240, 95, 64, 0.81);
+    border : 0px;
+    /* background-color: rgba(240,95,64,.9); */
+    /* color: #f05f40; */
+}
+
+.thumbnail >.caption{
+    color: #fff;
+}
+
+.team-box{
+    font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+    transition: all .2s ease-in-out; 
+}
+
+.team-box:hover { 
+    transform: scale(1.1); 
+}
+/*
+.color1{
+    background-color: #04C9C2;
+}
+
+.color2{
+    background-color: #66C360;
+}
+
+.color3{
+    background-color: #04C9C2;
+}
+
+.color4{
+    background-color: #04C9C2;
+}
+*/
+.nombre {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.detalles {
+    font-size: 14px;
+}
+
+.dirección {
+
+}
+
+.correo {
+
+}
+
+.telefono {
+
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+/* make columns in row with equal heigth */
+@media(max-width:1200px){   
+
+    .row > .team-box:nth-child(2n+1){
+        clear: left;
+    }
+
+    .row > .col-sm-6:nth-child(2n+1){
+        clear: left;
+    }
+}
+/*
+.row [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.row{
+    overflow: hidden; 
+}
+*/
+
+/* set correct size of the map */
+@media(min-width:1200px){ 
+    #mapa > .container {
+        width: 60%;
+    }
 }

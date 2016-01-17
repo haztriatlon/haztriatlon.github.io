@@ -81,7 +81,7 @@
             </div>
         </header>
 
-        <section id="mapa" class="bg-primary">
+        <section id="mapa" class="bg-primary" style="padding-top: 10px;">
             <div class="container">
                 <div class="row text-center">
                     <h2 id="test">Selecciona un estado</h2>
@@ -119,8 +119,11 @@
                             -moz-transform-origin:  50% 50%; 
                             -webkit-transform-origin:  50% 50%; 
                             -ms-transform-origin:   50% 50%; 
-                            -o-animation-name: pulse;  
                             -o-transform-origin:  50% 50%;
+                            -moz-animation-duration: .5s;
+                            -webkit-animation-duration: .5s;
+                            -ms-animation-duration: .5s;
+                            -o-animation-duration: .5s;
                         }
                     </style>
 
@@ -167,6 +170,189 @@
             </div>
         </section>    
 
+        <section class="bg-dark"  id="equipos" style="display:none" >
+            <div class="container-fluid">
+                <div class="row text-center" style="margin-bottom: 15px;">
+                    <h2 id="estadoSeleccionado"></h2>
+                </div>
+
+                <div class="row" style="margin-left: 5px; margin-right: 5px;">
+                    <div class="col-sm-6 col-lg-4 team-box">
+                        <a href="#" class="thumbnail">
+                            <!-- <img src="caca.jpg" class="img-responsive" alt="..." style="width: 100%; display: block;"> -->
+                            <div class="caption">
+                                <h3 class="nombre text-center">
+                                    Ruffer Sports
+                                </h3>
+                                <div class="detalles">
+                                    <dl class="dl-horizontal">
+                                        <dt>Dirección</dt>
+                                        <dd>En la  montaña</dd>
+                                        <dt>Email</dt>
+                                        <dd>ruffer@sports</dd>
+                                        <dt>Telefono</dt>
+                                        <dd>7225555551</dd>
+                                    </dl>  
+                                </div>
+                            </div>
+                        </a>
+                        <!-- <div class="thumbnail">
+                            <div class="caption">
+                                <h3 class="nombre text-center">
+                                    Ruffer Sports
+                                </h3>
+                                <div class="detalles">
+                                    <dl class="dl-horizontal">
+                                        <dt>Dirección</dt>
+                                        <dd>En la  montaña</dd>
+                                        <dt>Email</dt>
+                                        <dd>ruffer@sports</dd>
+                                        <dt>Telefono</dt>
+                                        <dd>7225555551</dd>
+                                    </dl>  
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-sm-6 col-lg-4 team-box">
+                        <a href="#" class="thumbnail">
+                            <!-- <img src="caca.jpg" class="img-responsive" alt="..." style="width: 100%; display: block;"> -->
+                            <div class="caption">
+                                <h3 class="nombre text-center">
+                                    Ruffer Sports
+                                </h3>
+                                <div class="detalles">
+                                    <dl class="dl-horizontal">
+                                        <dt>Dirección</dt>
+                                        <dd>En la  montaña</dd>
+                                    </dl>  
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- 
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 team-box color1">
+                    <div class="portfolio-box-caption animated shake">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                    <dt>Email</dt>
+                                    <dd>ruffer@sports</dd>
+                                    <dt>Telefono</dt>
+                                    <dd>7225555551</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-box color2">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-box color3">
+                    <div class="portfolio-box-caption ">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                    <dt>Email</dt>
+                                    <dd>ruffer@sports</dd>
+                                    <dt>Telefono</dt>
+                                    <dd>7225555551</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-box color4">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                    <dt>Email</dt>
+                                    <dd>ruffer@sports</dd>
+                                    <dt>Telefono</dt>
+                                    <dd>7225555551</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-box color1">
+                    <div class="portfolio-box-caption ">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                    <dt>Email</dt>
+                                    <dd>ruffer@sports</dd>
+                                    <dt>Telefono</dt>
+                                    <dd>7225555551</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-box color2">
+                    <div class="portfolio-box-caption ">
+                        <div class="portfolio-box-caption-content">
+                            <h3 class="nombre text-center">
+                                Ruffer Sports
+                            </h3>
+                            <div class="detalles">
+                                <dl class="dl-horizontal">
+                                    <dt>Dirección</dt>
+                                    <dd>En la  montaña</dd>
+                                    <dt>Email</dt>
+                                    <dd>ruffer@sports</dd>
+                                    <dt>Telefono</dt>
+                                    <dd>7225555551</dd>
+                                </dl>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+            -->
+        </section>
+
         <section id="contact">
             <div class="container">
                 <div class="row">
@@ -191,21 +377,77 @@
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
-        <!-- Map animations -->
+
         <script>
             jQuery(document).ready(function ($) {
+
+                var animationEnds = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                var showResults = function (state) {
+                    $('#estadoSeleccionado').text($(state).attr("title"));
+                    $('#equipos').slideDown(1500, 'easeInExpo');
+                    //scroll down animation
+                    $('html, body').stop().animate({
+                        scrollTop: ($('#equipos').offset().top - 50)
+                    }, 1250, 'easeInOutExpo', function () {
+
+                    });
+                };
+
+                var updateResults = function (state) {
+
+                    /* teams section animation */
+                    var animationOutClass = "animated fadeOutRight";
+                    var animationInClass = "animated fadeInLeft";
+                    $('#equipos').addClass(animationOutClass).one(animationEnds, function () {
+                        $('#equipos').removeClass(animationOutClass);
+                        $('#estadoSeleccionado').text($(state).attr("title"));
+                        $('#equipos').addClass(animationInClass).one(animationEnds, function () {
+                            $('#equipos').removeClass(animationInClass);
+                        });
+                    });
+
+
+                };
+
+                var scrollToEquipos = function (onFinish) {
+                    //scroll down animation
+                    $('html, body').stop().animate({
+                        scrollTop: ($('#equipos').offset().top - 50)
+                    }, 900, 'easeOutExpo',onFinish);
+                };
+
+                /* Map animations */
                 $('path').on('click',
                         function () {
                             //alert(this.id);
+                            var state = this;
                             var g = $(this).parent();
                             $(this).detach();
                             $(this).appendTo(g);
                             $(this).attr("class", "landnohover animated pulse")
-                                    .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                                    .one(animationEnds, function () {
                                         $(this).attr("class", "land");
+
+                                        if (!$('#equipos').is(":visible")) {
+                                            showResults(state);
+                                        } else {
+                                            scrollToEquipos(function(){
+                                                updateResults(state);
+                                            });
+                                        }
                                     });
                         }
                 );
+
+                /* Team blocks animations 
+                 $('.team-box').mouseenter(
+                 function () {
+                 var animationClass = "animated shake";
+                 $(this).addClass(animationClass).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                 $(this).removeClass(animationClass);
+                 });
+                 });*/
             });
         </script>
 
