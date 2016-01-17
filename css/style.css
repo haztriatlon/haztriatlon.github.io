@@ -5,7 +5,7 @@
 
 /* Team's info */
 
-#equipos{
+#equiposSection{
     -moz-animation-duration: .5s;
     -webkit-animation-duration: .5s;
     -ms-animation-duration: .5s;
@@ -23,12 +23,12 @@
     color: #fff;
 }
 
-.team-box{
+.thumbnail{
     font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
     transition: all .2s ease-in-out; 
 }
 
-.team-box:hover { 
+.thumbnail:hover { 
     transform: scale(1.1); 
 }
 /*
