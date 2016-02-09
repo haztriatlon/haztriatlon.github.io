@@ -176,9 +176,9 @@
                     <h2 id="estadoSeleccionado"></h2>
                 </div>
 
-                <div id="equipos" class="row" style="margin-left: 5px; margin-right: 5px;">
+                <div id="equipos"  style="margin-left: 5px; margin-right: 5px;">
 
-                    <!-- Se llena con asíncronamente con archivos JSON en /data -->
+                    <!-- Se llena asíncronamente con archivos JSON en /data -->
 
                 </div>
             </div>
@@ -207,6 +207,12 @@
             </div>
         </section>
 
+        <footer>
+            <div class="container text-center">
+                <p>Copyright &copy;2016 José Zamudio &amp; David Zamudio</p>                
+            </div>
+        </footer>
+
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
@@ -215,6 +221,60 @@
             jQuery(document).ready(function ($) {
 
                 var animationEnds = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                var appendDetail = function (lista, key, item) {
+                    switch (key) {
+                        case 'Facebook':
+                            var parent = $(lista).parent().children('.social');
+                            var valor = $('<a/>', {
+                                'target': '_blank',
+                                'class': 'facebook',
+                                'href': item
+                            });
+                            $(parent).append(valor);
+                            break
+
+                        case 'Logo':
+                            var parent = $(lista).parents('.caption');
+                            console.log(parent);
+                            var logo = $('<img/>', {
+                                'class': 'logo img-responsive img-rounded',
+                                'src': item
+                            });
+
+                            $(parent).prepend($(logo));
+                            break;
+
+                        case 'Web':
+                            var dato = $('<dt/>', {
+                                'text': 'Página web'
+                            });
+
+                            var valor = $('<dd/>', {
+                            });
+                            
+                            var link = $('<a/>', {
+                                'target':'_blank',
+                                'href': item,
+                                'text': item
+                            });
+                            $(valor).append($(link));
+                            $(lista).append($(dato)).append($(valor));
+                            break;
+
+                        default:
+                            var dato = $('<dt/>', {
+                                'text': key
+                            });
+
+                            var valor = $('<dd/>', {
+                                'text': item
+                            });
+
+                            $(lista).append($(dato)).append($(valor));
+                    }
+
+                };
 
                 var getData = function (state) {
                     //clear previous data
@@ -228,42 +288,57 @@
                             var tumb = $('<div/>', {
                                 'class': 'thumbnail'
                             });
+
+                            $(teamBox).append($(tumb));
+
                             var caption = $('<div/>', {
                                 'class': 'caption'
                             });
                             $(tumb).append($(caption));
-                            $(teamBox).append($(tumb));
+
 
                             var nombre = $('<h3/>', {
                                 'class': 'nombre text-center',
                                 'text': equipo.nombre
                             });
 
+
                             $(caption).append($(nombre));
 
                             var detalles = $('<div/>', {
                                 'class': 'detalles'
                             });
+
+                            var social = $('<div/>', {
+                                'class': 'social center-block'
+                            });
+
                             var lista = $('<dl/>', {
                                 'class': 'dl-horizontal'
                             });
-                            $.each(equipo.detalles, function (key, item) {
-                                var dato = $('<dt/>', {
-                                    'text': key
-                                });
-                                var valor = $('<dd/>', {
-                                    'text': item
-                                });
-
-                                $(lista).append($(dato)).append($(valor));
-                            });
-
                             $(detalles).append($(lista));
+                            $(detalles).append($(social));
                             $(caption).append($(detalles));
+
+                            $.each(equipo.detalles, function (key, item) {
+                                appendDetail(lista, key, item);
+                            });
 
                             $('#equipos').append($(teamBox));
 
                         });
+                    }).error(function () {
+                        var msg = $('<div/>', {
+                            'class': 'text-center'
+                        });
+                        var empty1 = $('<p/>', {
+                            'text': 'Desafortunadamente no tenemos información de equipos de este estado.'
+                        });
+                        var empty2 = $('<p/>', {
+                            'text': '¿Conoces a un equipo? Envíamos un correo con la información'
+                        });
+                        $(msg).append($(empty1)).append($(empty2));
+                        $('#equipos').append($(msg));
                     });
                 };
 
@@ -296,7 +371,7 @@
                     $('html, body').stop().animate({
                         scrollTop: ($('#equiposSection').offset().top - 50)
                     }, 900, 'easeOutExpo').promise().done(onFinish);
-                    
+
                 };
 
                 /* Map animations */

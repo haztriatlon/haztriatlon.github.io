@@ -17,37 +17,31 @@
     border : 0px;
     /* background-color: rgba(240,95,64,.9); */
     /* color: #f05f40; */
+    font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+    transition: all .2s ease-in-out; 
 }
 
 .thumbnail >.caption{
     color: #fff;
 }
 
-.thumbnail{
-    font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
-    transition: all .2s ease-in-out; 
+.thumbnail a{
+    color: #fff;
 }
+
+.thumbnail a:hover{
+    color: #ccc;
+}
+
 
 .thumbnail:hover { 
     transform: scale(1.1); 
 }
-/*
-.color1{
-    background-color: #04C9C2;
+
+.thumbnail .logo{
+
 }
 
-.color2{
-    background-color: #66C360;
-}
-
-.color3{
-    background-color: #04C9C2;
-}
-
-.color4{
-    background-color: #04C9C2;
-}
-*/
 .nombre {
     text-transform: uppercase;
     font-size: 18px;
@@ -59,7 +53,16 @@
     font-size: 14px;
 }
 
-.dirección {
+.social .facebook{
+    background-image: url('../img/FB-f-Logo__blue_29.png');
+    display:block;
+    width: 29px;
+    height: 29px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.direccion {
 
 }
 

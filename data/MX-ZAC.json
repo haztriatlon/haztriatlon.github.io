@@ -1,0 +1,12 @@
+{
+    "equipos": [
+        {
+            "nombre": "TriZac",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/TriZac"
+            }
+
+        }
+    ]
+}

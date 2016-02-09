@@ -1,0 +1,11 @@
+{
+    "equipos": [
+        {
+            "nombre": "Veratrix",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/VeratrixMx"
+            }
+        }
+    ]
+}

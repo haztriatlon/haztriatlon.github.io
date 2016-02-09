@@ -1,0 +1,65 @@
+{
+    "equipos": [
+        {
+            "nombre": "Alpunto",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/alpuntosport/",
+                "Pagina web":"http://www.alpuntosport.com/"
+            }
+        },
+        {
+            "nombre": "Club Aleman de México",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/clubaleman.demexico.9"
+            }
+        },
+        {
+            "nombre": "E-Trainer",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/Etrainerteam"
+            }
+        },
+        {
+            "nombre": "Fortia Team",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/FortiaTeam"
+            }
+        },
+        {
+            "nombre": "Mind2motion",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/mind2motionsport"
+            }
+        },
+        {
+            "nombre": "Riders Triathlon",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/riderstriathlon"
+            }
+        },
+        {
+            "nombre": "Spotia",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/SportiaMexico"
+            }
+        },
+        {
+            "nombre": "Triboo Triatlon",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/TriBoo.Triatlon"
+            }
+        },
+        {
+            "nombre": "Vespa",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/vespa.triatlon"
+            }
+        },
+        {
+            "nombre": "Ttzenbike",
+            "detalles": {
+            }
+        }
+    ]
+}
+

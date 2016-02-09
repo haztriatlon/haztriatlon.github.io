@@ -1,0 +1,19 @@
+{
+    "equipos": [
+        {
+            "nombre": "Aspid",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/triatlonaspid"
+            }
+        },
+        {
+            "nombre": "Cronos",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/groups/324440877581652"
+            }
+        }
+    ]
+}
+

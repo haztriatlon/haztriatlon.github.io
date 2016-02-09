@@ -1,0 +1,29 @@
+{
+    "equipos": [
+        {
+            "nombre": "Evolution",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/evolutionshopsaltillo/"
+            }
+        },
+        {
+            "nombre": "Rapport Sport",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/groups/135087933228639/"
+            }
+        },
+        {
+            "nombre": "Tri-Locos",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/profile.php?id=100010167228859"
+            }
+        },
+        {
+            "nombre": "Dragons",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/groups/132197286847398/"
+            }
+        }        
+    ]
+}
+

@@ -1,0 +1,10 @@
+{
+    "equipos": [        
+        {
+            "nombre": "Triton",
+            "detalles": {
+                "Facebook":"https://www.facebook.com/triton.triatlon"
+            }
+        }       
+    ]
+}

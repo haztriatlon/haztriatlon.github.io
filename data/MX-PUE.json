@@ -1,0 +1,19 @@
+{
+    "equipos": [
+        {
+            "nombre": "Triatlon Mx",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/triatlon.mx"
+            }
+        },
+        {
+            "nombre": "Exersite",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/exersite.puebla.7"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,35 @@
+{
+    "equipos": [
+        {
+            "nombre": "3volution Triathlon Team",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/3volutionTriathlonTeam"
+            }
+        },
+        {
+            "nombre": "Cannibal",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/cannibalmexico"
+            }
+        },
+        {
+            "nombre": "Rockets triclub",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/rockets.triclub"
+            }
+        },
+        {
+            "nombre": "ULM Triatlón",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/Triatlón-ULM-155792267834559/"
+            }
+        },
+        {
+            "nombre": "Alpha",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/alpha.triathlon.team"
+            }
+        }
+    ]
+}
+

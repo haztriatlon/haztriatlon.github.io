@@ -1,0 +1,19 @@
+{
+    "equipos": [
+        {
+            "nombre": "Dragons",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/groups/132197286847398"
+            }
+        },
+        {
+            "nombre": "Sunkas 4 Triatlón",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/Sunkas_4-Coaching-Triatl%C3%B3n-521489667897048"
+            }
+        }
+    ]
+}
+

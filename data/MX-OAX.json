@@ -1,0 +1,27 @@
+{
+    "equipos": [
+        {
+            "nombre": "Avantti",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/Avantti-NBC-Triatl%C3%B3n-Oaxaca-493323287399631"
+            }
+        },
+        {
+            "nombre": "Squalo",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/profile.php?id=100008350749180"
+            }
+        },
+        {
+            "nombre": "Xhunnis",
+            "detalles": {
+                "Facebook":
+                        "https://www.facebook.com/XHUNNIS-182863445115019"
+            }
+        }
+
+    ]
+}
+
