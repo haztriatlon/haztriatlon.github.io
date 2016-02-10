@@ -176,7 +176,7 @@
                     <h2 id="estadoSeleccionado"></h2>
                 </div>
 
-                <div id="equipos"  style="margin-left: 5px; margin-right: 5px;">
+                <div id="equipos" class="grid"  style="margin-left: 5px; margin-right: 5px;">
 
                     <!-- Se llena asíncronamente con archivos JSON en /data -->
 
@@ -219,8 +219,19 @@
 
         <script>
             jQuery(document).ready(function ($) {
+                //jQuery(window).on('load', function () {
+                //    var $ = jQuery;
 
                 var animationEnds = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                var masonryOptions = {
+                    // options
+                    //initLayout: false,
+                    itemSelector: '.team-box',
+                    //columnWidth: '.grid-sizer',
+                    percentPosition: true
+                };
+
+                var $grid = $('#equipos').masonry(masonryOptions);
 
                 var appendDetail = function (lista, key, item) {
                     switch (key) {
@@ -235,14 +246,18 @@
                             break
 
                         case 'Logo':
-                            var parent = $(lista).parents('.caption');
+                            var parent = $(lista).parents('.thumbnail');
                             console.log(parent);
                             var logo = $('<img/>', {
-                                'class': 'logo img-responsive img-rounded',
+                                'class': 'logo center-block img-responsive img-circle',
                                 'src': item
                             });
 
-                            $(parent).prepend($(logo));
+                            var logoBackground = $('<div/>', {
+                                'class': 'logoback'
+                            });
+                            $(logoBackground).append($(logo));
+                            $(parent).prepend($(logoBackground));
                             break;
 
                         case 'Web':
@@ -252,9 +267,9 @@
 
                             var valor = $('<dd/>', {
                             });
-                            
+
                             var link = $('<a/>', {
-                                'target':'_blank',
+                                'target': '_blank',
                                 'href': item,
                                 'text': item
                             });
@@ -277,13 +292,19 @@
                 };
 
                 var getData = function (state) {
-                    //clear previous data
+
                     $('#equipos').empty();
+
                     var file = "data/" + state.id + ".json";
                     $.getJSON(file, function (data) {
+                        //clear previous data
+                        $grid.masonry('destroy');
+                        $grid.masonry(masonryOptions);
+
                         $.each(data.equipos, function (key, equipo) {
                             var teamBox = $('<div/>', {
-                                'class': 'col-sm-6 col-lg-4 team-box'
+                                'class': 'col-xs-12 col-sm-6 col-lg-4 team-box'
+                                        //'class': 'team-box'
                             });
                             var tumb = $('<div/>', {
                                 'class': 'thumbnail'
@@ -325,8 +346,26 @@
                             });
 
                             $('#equipos').append($(teamBox));
+                            //items.push($(teamBox)[0]);
+                            //items = items.add(teamBox);
 
+                            //$grid.append($(teamBox)).masonry('appended', $(teamBox));                            
+
+                            $(teamBox).imagesLoaded().always(function () {
+                                $grid.masonry('appended', $(teamBox), true);
+                                //$grid.masonry();
+                            });
                         });
+
+                        $grid.imagesLoaded().always(function () {
+                            $grid.masonry('reloadItems').masonry();
+                        });
+                        //var $items = $(items);
+                        /* $grid.imagesLoaded(function () {
+                         $grid.masonry('appended', items);
+                         $grid.masonry();
+                         });*/
+
                     }).error(function () {
                         var msg = $('<div/>', {
                             'class': 'text-center'
@@ -410,6 +449,12 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="js/creative.js"></script>
+
+        <!-- masonry griding system JavaScript -->
+        <script src="js/masonry.pkgd.min.js"></script>     
+        <script src="js/imagesloaded.pkgd.min.js"></script>  
+
+
 
     </body>
 
