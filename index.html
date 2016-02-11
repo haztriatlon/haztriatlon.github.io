@@ -41,6 +41,31 @@
 
     <body id="page-top">
 
+        <!-- Facebook SDK -->
+
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1513145995656487',
+                    xfbml: true,
+                    version: 'v2.5'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
+
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -216,7 +241,6 @@
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
-
         <script>
             jQuery(document).ready(function ($) {
                 //jQuery(window).on('load', function () {
@@ -245,9 +269,36 @@
                             $(parent).append(valor);
                             break
 
+                        case 'Facebook(page)':
+                            var parent = $(lista).parents('.thumbnail');
+
+
+                            var $facePage = $('<div/>', {
+                                'data-href': 'https://www.facebook.com/MADCATeam/',
+                                'class': 'fb-page',
+                                'data-small-header': 'false',
+                                'data-adapt-container-width': 'true',
+                                'data-hide-cover': 'false',
+                                'data-show-facepile': 'true'
+                            });
+
+                            $facePage.append(
+                                    $('<div/>', {
+                                        'class': 'fb-xfbml-parse-ignore'
+                                    }).append(
+                                    $('<blockquote/>', {
+                                        'cite': item
+                                    }).append(
+                                    $('<a/>', {
+                                        'href': item,
+                                        'text': $(parent).children('.caption').children('.nombre').text()
+                                    }
+                                    ))));
+                            $(parent).append($facePage);
+                            break
+
                         case 'Logo':
                             var parent = $(lista).parents('.thumbnail');
-                            console.log(parent);
                             var logo = $('<img/>', {
                                 'class': 'logo center-block img-responsive img-circle',
                                 'src': item
