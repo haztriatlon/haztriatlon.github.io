@@ -6,10 +6,94 @@
                 "Entrenador": "Alberto Garcia Aragon",
                 "Telefono": "8118103805",
                 "Web": "http://www.madcat.mx",
-                "Facebook": "https://www.facebook.com/MADCATeam/",
-                "Logo":"img/MX-NLE/madcat.jpeg"
+                "Facebook(page)": "https://www.facebook.com/MADCATeam/",
+                "Logo": "img/MX-NLE/madcat.jpeg"
             }
-
+        },
+        {
+            "nombre": "Rufer Sport",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/rufer.vetta.sports"
+            }
+        },
+        {
+            "nombre": "Tri Force",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/TriforceMexico"
+            }
+        },
+        {
+            "nombre": "T3xtreme",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/3xtreme-Paco-Serrano-411386282242513/?ref=br_rs&pnref=lhc"
+            }
+        },
+        {
+            "nombre": "T3",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/groups/258977547488137"
+            }
+        },
+        {
+            "nombre": "Team Prole",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/teamprole"
+            }
+        },
+        {
+            "nombre": "KOA Triathlon",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/KOA-Triathlon-883975614959674"
+            }
+        },
+        {
+            "nombre": "Fe26",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/fe.atletico?fref=ts"
+            }
+        },
+        {
+            "nombre": "TriGear",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/trigearnl/"
+            }
+        },
+        {
+            "nombre": "Tortugas Apodaca",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/tortugas.apodaca?fref=ts"
+            }
+        },
+        {
+            "nombre": "Triburones",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/TriburonesDeSanNicolasTriatlon"
+            }
+        },
+        {
+            "nombre": "Trainer",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/TRAINER-152198235737"
+            }
+        },
+        {
+            "nombre": "Lyder",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/LYDER-Triatlon-"
+            }
+        },
+        {
+            "nombre": "Tritanes",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/Tritanes"
+            }
+        },
+        {
+            "nombre": "Lili Figueroa Team",
+            "detalles": {
+                "Facebook": "https://www.facebook.com/ClubLiliFigueroa"
+            }
         }
     ]
 }
+
